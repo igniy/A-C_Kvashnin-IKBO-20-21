@@ -107,6 +107,10 @@ body {
     background-color: white;
     height:auto;
 }
+.info  .topic1{
+    background-color: white;
+    height:555px;
+}
 .midle-nav{
     height:50px ;
     width: 100%;

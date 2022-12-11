@@ -31,3 +31,11 @@ html {
         transform: rotate(360deg);
     }
 }
+.info{
+    width: 100%;
+    background-color: white;
+    height:600px;
+}
+.topic1 h3{
+   padding: 10px;
+}

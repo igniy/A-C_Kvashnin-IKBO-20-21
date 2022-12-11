@@ -45,12 +45,18 @@ a:visited {
     text-decoration: none;
     color: aliceblue;
 }
+.top-nav ul li a:hover,
+.top-nav ul li a:active{
+    color: #043D9E;
+    text-decoration: none;
+}
 .top-nav {
     margin: auto 0;
     font-size: 16px;
     font-family: 'Philosopher', sans-serif;
     height: 100px;
-    padding: 2em; 
+    padding: 2em;
+    grid-area: 'header';
 }
 .menu{
     display: flex;
@@ -63,7 +69,7 @@ a:visited {
     margin: 0 1rem;
     overflow: hidden;
 }
-.menu-button-container {
+.menu-button-container{
     display: none;
     height: 100%;
     width: 30px;
@@ -143,22 +149,32 @@ a:visited {
         padding: 0.5em 0;
         width: 100%;
         color: #EEDFA2;
-        background-color: #EEDFA2;
+        background-color: black;
     }
     .menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
 }
-.quote{
+.quote1{
     color: aliceblue;
-    font-family: sans-serif;
-    margin-top: 200px;
-    
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 250px;
+    text-align: center;
+    font-size: 2rem;
+    grid-area: 'quote1';
+}
+.quote2{
+    color: aliceblue;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+    grid-area: 'quote2';
+    float: right;
+    margin-right: 10%;
 }
 .footer {
     height: 100px;
     color: aliceblue;
-    font-family: 'Nunito', sans-serif;
+    grid-area: 'footer';
     font-size: 1rem;
     display: flex;
     justify-content: center;
@@ -166,7 +182,9 @@ a:visited {
     align-items: center;
     text-align: center;
     font-family: 'Philosopher', sans-serif;
-   
+    position: absolute;
+    bottom: 0;
+    margin: auto 35%;
 }
 .footer p {
     margin: 5px;
