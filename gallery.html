@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/preloader.css">
+    <link rel="stylesheet" href="style/gallery.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <title>A&C</title>
+    <link rel="icon" type="image/png" href="img/2.png">
+</head>
+<body>
+  <div id="stars"></div>
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+        <div class="planet-loader p-l-1"></div>
+        <div class="planet-loader p-l-2"></div>
+        <div class="planet-loader p-l-3"></div>
+        <div class="planet-loader p-l-4"></div>
+    </div>
+    <div id="postloader"></div>
+    <!-- <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="Images/logo.png" class="logo_img linkIndex">
+            </div>
+            <div class="menu_burger">
+                <p class="p_burger">Меню</p>
+                <div class="button_menu">
+                    <div class="but_menu but_menu1"><p class="but_text linkMaket">Макет</p></div>
+                    <div class="but_menu but_menu2">
+                        <p class="but_text">Объекты</p>
+                    </div>
+                    <div class="but_menu but_menu3"><p class="but_text linkGallery">Галерея</p></div>
+                    <div class="obj_burger">
+                        <div class="obj_btn link0">Солнце</div>
+                        <div class="obj_btn link1">Меркурий</div>
+                        <div class="obj_btn link2">Венера</div>
+                        <div class="obj_btn link3">Земля</div>
+                        <div class="obj_btn link4">Марс</div>
+                        <div class="obj_btn link5">Юпитер</div>
+                        <div class="obj_btn link6">Сатурн</div>
+                        <div class="obj_btn link7">Уран</div>
+                        <div class="obj_btn link8">Нептун</div>
+                        <div class="obj_btn link9">Другое</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user_place"></div>
+        </div> -->
+
+        <div class="gallery">
+            <section class="gallery">
+                <h2 class="title">Галерея</h2>
+                <div class="gallery-list">
+                  <a href="img/apophis.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/apophis.jpg" alt="alt">
+                  </a>
+                  <a href="img/enke.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/enke.jpg" alt="alt">
+                  </a>
+                  <a href="img/galley.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/galley.jpg" alt="alt">
+                  </a>
+                  <a href="img/asteroids.jpeg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/asteroids.jpeg" alt="alt">
+                  </a>
+                  <a href="img/4.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/4.jpg" alt="alt">
+                  </a>
+                  <a href="img/5.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/5.jpg" alt="alt">
+                  </a>
+                  <a href="img/6.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/6.jpg" alt="alt">
+                  </a>
+                  <a href="img/7.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Посмотреть</div>
+                    <img src="img/7.jpg" alt="alt">
+                  </a>
+                  
+                </div>
+            </section>
+        </div>
+        <a href="index.html"><p>Назад</p></a>
+        <!-- <div class="footer">
+          <div class="p_footer">
+              <p>© 2022  <a class="footer_a linkForm">Оставить отзыв</a>  <a class="footer_a linkContact">Контакты</a></p>
+              <p>Мухаметшин А.Р. ИКБО-20-21</p>
+          </div> -->
+      </div>
+    </div>
+    <script src="script/back.js"></script>
+    <script src="script/preloader.js"></script>
+    <script src="script/gallery.js"></script>
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
+</body>
+</html>
