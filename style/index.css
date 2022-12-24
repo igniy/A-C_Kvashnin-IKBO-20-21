@@ -200,5 +200,7 @@ a:visited {
     .footer{
         margin: auto;
     }
-    
+    .quote1{
+        margin-top: 150px;
+    }
 }
