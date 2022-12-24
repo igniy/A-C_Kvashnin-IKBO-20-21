@@ -1,0 +1,448 @@
+.logo_title {
+    margin-right: auto;
+    margin-left: 10px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    justify-content:left;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    height:60px;
+}
+.logo_title p {
+    margin-bottom: 5px;
+    white-space: nowrap;
+    width:50%;
+    padding: 0 10px 0 7px;
+    height:fit-content;
+    font-size:27px;
+    line-height: 1;
+}
+
+.logo_title img {
+    width: 40px;
+    height: 40px;
+}
+
+.header_navigation .dropdown a,
+.header_navigation .dropdown a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu {
+    z-index: 999;
+}
+
+.header_navigation{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+    justify-content:end;
+    padding: 10px 10px 5px 10px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.nav_links {
+    margin: 0;
+    padding-left: 0.7rem;
+}
+
+.nav_menu .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav_menu {
+    z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+}
+
+.nav_menu li {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    padding: 5px 15px;
+}
+
+.nav_menu li a{
+    white-space: nowrap;
+    color: black;
+    -webkit-transition:transform .5s;
+    text-decoration: none;
+}
+
+.nav_menu li a:hover{
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+#checkbox_toggle{
+    display:none;
+}
+
+#checkbox_toggle_drop_menu{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+    font-size: 24px;
+    cursor:pointer;
+}
+
+.hamburger_mid_line{
+    background-color: black;
+    display:block;
+    height:3px;
+    position:relative;
+    width:24px;
+}
+
+.hamburger_mid_line::before, .hamburger_mid_line::after {
+    height: 3px;
+    width: 24px;
+    background-color: black;
+    content:"";
+    display:block;
+    position:absolute;
+    -webkit-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s;
+}
+
+.hamburger_mid_line::before{
+    top:7px;
+}
+
+.hamburger_mid_line::after{
+    top:-7px;
+}
+
+.celestial_bodies_div {
+    background-color: white;
+    position: relative;
+    padding: 5px;
+    border-top: 2px solid cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.celestial_bodies_ul {
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    -webkit-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    transform: scale(1,0);
+    display: block;
+    position: absolute;
+    top: 105px;
+    height: 100px;
+}
+
+.celestial_bodies_ul li{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    padding: 5px 5px 15px 3px;
+}
+
+.celestial_bodies_ul li a{
+    -webkit-transition: transform .3s  ;
+    -webkit-transform-origin:left;
+    -ms-transform-origin:left;
+    transform-origin:left;
+}
+
+.celestial_bodies_ul li a:hover{
+    -webkit-transform:scale(1.1, 1.1);
+    -ms-transform:scale(1.1, 1.1);
+    transform:scale(1.1, 1.1);
+}
+
+#checkbox_toggle_drop_menu:checked ~ .celestial_bodies_ul {
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+}
+
+
+#checkbox_toggle_drop_menu:checked ~ #label_checkbox_drop_menu {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+#label_checkbox_drop_menu {
+    color: black;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#label_checkbox_drop_menu:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 850px){
+    .logo_title p {
+        white-space: normal;
+        width:100%;
+    }
+
+    .nav_links {
+        margin: 7px 0 0 0;
+    }
+
+    .nav_menu {
+        -webkit-transform: scale(1,0);
+        -ms-transform: scale(1,0);
+        transform: scale(1,0);
+        -webkit-transform-origin:top;
+        -ms-transform-origin:top;
+        transform-origin:top;
+        display: block;
+        max-height: 0;
+        position: absolute;
+
+        background-color: white;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin-top: 5px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .nav_menu li a{
+        color: black;
+        padding: 15px;
+    }
+
+    .nav_menu li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 15px;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        height:43px;
+        border-bottom:2px solid white;
+    }
+
+    .nav_menu li:hover{
+        background-color: white;
+    }
+
+    #drop-menu-li label{
+        padding: 15px 5px 15px 15px;
+    }
+
+    .celestial_bodies_ul {
+        display: block;
+        position:relative;
+        max-height: 0;
+        background-color: white;
+        top:0;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin-top: 0;
+        -webkit-transition: all .3s  ;
+        -o-transition: all .3s  ;
+        transition: all .3s  ;
+    }
+
+    .celestial_bodies_div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position:absolute;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: transparent;
+        right: 0;
+        left: 0;
+        padding: 5px;
+        border-top: 0 solid cornflowerblue;
+        border-bottom: 0 solid cornflowerblue;
+    }
+
+    .celestial_bodies_div li a{
+        color: black;
+        padding: 0;
+    }
+
+    .celestial_bodies_div li {
+        display: inline-block;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+        height:fit-content;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        border-bottom:0 solid white;
+    }
+
+    .celestial_bodies_div li:hover{
+        background-color: white;
+    }
+
+    #checkbox_toggle_drop_menu:checked ~ .celestial_bodies_ul {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        transform: scale(1,1);
+        background-color: white;
+        display: block;
+        max-height: 100%;
+    }
+
+    #checkbox_toggle_drop_menu:checked ~ #label_checkbox_drop_menu {
+        display:none;
+    }
+
+    #checkbox_toggle_drop_menu:checked ~.celestial_bodies_ul .celestial_bodies_div {
+        background-color: transparent;
+    }
+
+    #checkbox_toggle:checked ~ .nav_menu {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        transform: scale(1,1);
+        display: block;
+        max-height: 100%;
+
+    }
+
+    .hamburger{
+        display: block;
+        padding: 20px;
+        margin-bottom: 5px;
+    }
+
+    #checkbox_toggle:checked .header_navigation{
+        border:0;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger_mid_line {
+        background-color:transparent;
+    }
+
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger_mid_line::before {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top:0;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger_mid_line::after {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top:0;
+    }
+
+    #checkbox_toggle:checked ~ .nav_menu {
+        border-bottom: 2px solid cornflowerblue;
+        border-top: 2px solid cornflowerblue;
+    }
+}
+
+@media (max-width: 340px) {
+    .logo_title img{
+        display:none;
+    }
+}
+
+@media (min-width: 1500px) {
+    .header_navigation {
+        padding-bottom: 15px;
+    }
+    .header_navigation .logo_title p {
+        font-size: 3em;
+    }
+    .header_navigation .nav_menu {
+        font-size: 1.9em;
+    }
+    .header_navigation .dropdown {
+        font-size: 1.7em;
+    }
+    .header_navigation .dropdown-item {
+        font-size: 1.5em;
+    }
+    .header_navigation {
+        border-bottom: 4px solid cornflowerblue;
+    }
+}

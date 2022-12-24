@@ -1,0 +1,28 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin');
+* {
+    font-family: 'Ubuntu', serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.quote a:hover {
+    text-decoration: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}

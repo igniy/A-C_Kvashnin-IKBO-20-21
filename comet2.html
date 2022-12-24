@@ -7,6 +7,8 @@
     <title>A&C</title>
     <link rel="icon" type="image/png" href="img/2.png">
     <link rel="stylesheet" href="style/comet.css">
+    <link rel="stylesheet" href="https://solarsystem.nasa.gov/assets/public_manifest-266db39693605ab75829dc2a6343b2e3528df7d6e31bf6157e61eb07ca7307d5.css">
+
 </head>
 <body>
     <div id="stars"></div>
@@ -15,36 +17,70 @@
             <img class="logo comet" src="img/logo_comet.png">
         </div> -->
     </header>
+    
     <section class='top_feature_area'>
         <section class='main_feature banner_feature'>
-        <h1 class='article_title'>
-        Кометы
-        </h1>
+            <h1 class='article_title'><a href="index.html">
+                Кометы
+                </a>
+                </h1>
         </section>
     </section>
-    <div class="midle-nav">
-        <ul class="midle_nav_items">
-            <li class="corrent"><a href="comet.html">Общие сведения</a>
-                <div class="tertiary_nav_arrow"></div>
+    <main class="info">
+        <div class='middle_nav'>
+            <nav class='tertiary_nav tertiary_nav_desktop'>
+            <div class='mobile_middle_nav_header'>
+            <div class='middle_nav_title'><a href="index.html">
+                Кометы
+                </a>
+            </div>
+            <div class='middle_nav_toggler'>
+            <div class='open_icon'>
+            Меню
+            </div>
+            <div class='close_icon'></div>
+            </div>
+            </div>
+            <ul class='middle_nav_items' style="font-family: 'Philosopher', sans-serif;">
+            <li>
+            <a href="comet.html">Общие сведения</a>
+            <div class='tertiary_nav_arrow'></div>
             </li>
-            <li><a href="comet2.html">Номенклатура</a>
-                <div class="tertiary_nav_arrow"></div>
+            <li class='current'>
+            <a href="comet2.html">Номенклатура</a>
+            <div class='tertiary_nav_arrow'></div>
             </li>
-            <li><a href="comet3.html">Строение</a>
-                <div class="tertiary_nav_arrow"></div>
+            <li class=''>
+            <a href="comet3.html">Строение</a>
+            <div class='tertiary_nav_arrow'></div>
             </li>
-        </ul>
-    </div>
-    <div class="info">
+            </ul>
+            </nav>
+            <nav class='tertiary_nav tertiary_nav_mobile'>
+            <select onchange='main.changePage(this.value);'>
+            <option selected='selected' value='comet.html'>
+            Общие сведения
+            </option>
+            <option value='comet2.html'>
+            Номенклатура
+            </option>
+            <option value='comet3.html'>
+            Строение
+            </option>
+            </select>
+            </nav>            
+            </div>
+    
     <section class="main_inf">
-            <div class="topic2">
+        <div class="topic2">
             <h3>Номенклатура</h3>
             <article class="text">
             <p>За минувшие столетия правила именования комет неоднократно меняли и уточняли. До начала XX века большинство комет называлось по году их обнаружения, иногда с дополнительными уточнениями относительно яркости или сезона года, если комет в этом году было несколько. Например, <q>Большая комета 1680 года</q>, <q>Большая сентябрьская комета 1882 года</q>, <q>Дневная комета 1910 года</q>.</p>
                 <p>После того как Галлей доказал, что кометы 1531, 1607 и 1682 годов — это одна и та же комета, и предсказал её возвращение в 1759 году, данная комета стала называться кометой Галлея. Вторая и третья известные периодические кометы получили имена Энке и Биэлы в честь учёных, вычисливших их орбиты, несмотря на то, что первая комета наблюдалась ещё Мешеном, а вторая — Мессье в XVIII веке. Позже периодические кометы обычно называли в честь их первооткрывателей. Кометы, наблюдавшиеся лишь в одном прохождении перигелия, продолжали называть по году появления.</p>
             </article>
-            </div>
-            </section></div>
+        </div>
+    </section>
+    </main>
     <script src="script/back.js"></script>
     <script src="script/comet.js"></script>
 </body>

@@ -88,10 +88,14 @@ body {
     font-family: 'Philosopher', sans-serif;
     font-size: 4em;
 }
-/* .logo{
-    height: 80px;
-    width: 100px;
-} */
+.article_title a:hover{text-decoration: none; color: #043D9E;}
+a:visited{text-decoration: none; color: aliceblue;}
+a{
+    text-decoration:none ;
+    color: aliceblue;
+}
+
+
 .main_inf h2{font-size: 3em;}
 .main_inf h3{font-size: 2em;}
 .main_inf p{font-size: 1.5em;}
@@ -106,18 +110,39 @@ body {
     width: 100%;
     background-color: white;
     height:auto;
+    /* bottom: 0; */
 }
-.info  .topic1{
-    background-color: white;
-    height:555px;
-}
+.topic1, .topic2,  .topic3{
+    margin-top: 20px;
+} 
 .midle-nav{
-    height:50px ;
+    margin-top: 20px;
+    height:70px ;
     width: 100%;
     background-color: #D1DDE6;
     justify-content: center;
     padding-top: 18px;
+    font-size: 2em;
 }
+.midle_nav_items li.corrent a{
+    color: black;
+    text-decoration: none;
+}
+
+.midle_nav_items li a{
+    text-decoration: none;
+    color: #747474;
+}
+.midle_nav_items li{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.midle_nav_items li a:hover,
+.midle_nav_items li a:active{
+    color: black;
+    text-decoration: none;
+}
+
 .midle_nav_items{
     display: flex;
     flex-direction: row;
@@ -125,38 +150,11 @@ body {
     justify-content: center;
     justify-content: space-around;
 }
-/* .midle_nav_items li.corrent::after{
-    bottom: calc(-100% - 18px);
-    left: 50%;
-    border: solid transparent;
-    content: "";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-top-color: #d1dde6;
-    border-width: 20px;
-    margin-left: -20px;
-} */
-.tertiary_nav_arrow{
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    --boxed_module_gutter: 25px;
-    --vh: 1262px;
-    --header_height: 92px;
-    line-height: 1.5;
-    font-size: 104%;
-    font-family: CooperHewitt,Helvetica,Arial,sans-serif;
-    list-style: none;
-    list-style-image: none;
-    white-space: nowrap;
-    color: #285978;
-    box-sizing: border-box;
-}
+
 
 .text{
     font-family: 'Philosopher', sans-serif;
     margin: 20px 20%;
     line-height: 2.5em;
+
 }

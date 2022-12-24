@@ -47,6 +47,12 @@ p{
     min-height: 70vh;
     width: 100%;
 }
+@media(max-width: 500px) {
+    .body1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
     
 .card{
     position: relative;

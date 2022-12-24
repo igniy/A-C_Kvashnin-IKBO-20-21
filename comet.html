@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A&C</title>
     <link rel="icon" type="image/png" href="img/2.png">
-    <link rel="stylesheet" href="style/comet.css">
+    <link rel="stylesheet" href="style/comet.css"/>
+    <link rel="stylesheet" media="all" href="https://solarsystem.nasa.gov/assets/public_manifest-cc6c7df0391e8a0b93c2eb45efa58fc84787ef83aae14a2707c603182a43f5c8.css"/>
+    <link rel="stylesheet" media="screen" href="https://solarsystem.nasa.gov/assets/mbcms/vendor/jquery.fancybox3-d5d81bdfc05a59e4ea72bca1d8b7fcc399bd3b61f7c06af95a8a48795df69d7a.css"/>
+    <link rel="stylesheet" media="screen" href="https://solarsystem.nasa.gov/assets/mbcms/vendor/jquery.fancybox-thumbs-63891ea3fd7b7f15621befe5cbdf329cd554b2129f7d69a7ea8d7cedb4c98323.css"/>
+    <link rel="stylesheet" media="print" href="https://solarsystem.nasa.gov/assets/gulp/print-8f8fee6fd062f161b3d761c1d1f16d49d7f6b94fc5c4450adeb3fcf015497a76.css"/>
+    <!-- <link rel="stylesheet" href="https://solarsystem.nasa.gov/assets/public_manifest-266db39693605ab75829dc2a6343b2e3528df7d6e31bf6157e61eb07ca7307d5.css"/> -->
+    <script src="https://solarsystem.nasa.gov/assets/mbcms/vendor/jquery.fancybox3-bd543a29719f5c70e897670b5484b67824cc3c8eba68c8e4719d3cd6e2a5f542.js"></script>
+    <script src="https://solarsystem.nasa.gov/assets/mbcms/vendor/jquery.fancybox-thumbs3-165b9822252e6816da53602b68cdd1a366475c528a9276488772c4849fed264f.js"></script>
+    <script src="https://solarsystem.nasa.gov/assets/public_manifest-b07de43b6021ceb574b50cfb6e8339f8db605696538bf0eab33e30195c5514ed.js"></script>
+    <script src="https://solarsystem.nasa.gov/assets/mb_manifest-3a8dffcce279709190a5d81d8d2844d0d0bcbfc3ac615c90e6ee633713048ebc.js"></script>
 </head>
 <body>
     <div id="stars"></div>
@@ -17,27 +26,60 @@
     </header>
     <section class='top_feature_area'>
         <section class='main_feature banner_feature'>
-        <h1 class='article_title'>
+        <h1 class='article_title'><a href="index.html">
         Кометы
+        </a>
         </h1>
         </section>
     </section>
-    <div class="midle-nav">
-        <ul class="midle_nav_items">
-            <li class="corrent"><a href="comet.html">Общие сведения</a>
-                <div class="tertiary_nav_arrow"></div>
+    <main class="info">
+        <div class='middle_nav'>
+            <nav class='tertiary_nav tertiary_nav_desktop'>
+            <div class='mobile_middle_nav_header'>
+            <div class='middle_nav_title'>
+                <a href="index.html">
+                    Кометы
+                </a>
+            </div>
+            <div class='middle_nav_toggler'>
+                <div class='open_icon'>
+                Меню
+                </div>
+                <div class='close_icon'></div>
+            </div>
+            </div>
+            <ul class='middle_nav_items' style="font-family: 'Philosopher', sans-serif;">
+            <li class='current'>
+            <a href="comet.html">Общие сведения</a>
+            <div class='tertiary_nav_arrow'></div>
             </li>
-            <li><a href="comet2.html">Номенклатура</a>
-                <div class="tertiary_nav_arrow"></div>
+            <li class=''>
+            <a href="comet2.html">Номенклатура</a>
+            <div class='tertiary_nav_arrow'></div>
             </li>
-            <li><a href="comet3.html">Строение</a>
-                <div class="tertiary_nav_arrow"></div>
+            <li class=''>
+            <a href="comet3.html">Строение</a>
+            <div class='tertiary_nav_arrow'></div>
             </li>
-        </ul>
-    </div>
-    <div class="info">
+            </ul>
+            </nav>
+            <nav class='tertiary_nav tertiary_nav_mobile'>
+            <select onchange='main.changePage(this.value);'>
+            <option selected='selected' value='comet.html'>
+            Общие сведения
+            </option>
+            <option value='comet2.html'>
+            Номенклатура
+            </option>
+            <option value='comet3.html'>
+            Строение
+            </option>
+            </select>
+            </nav>            
+        </div>
+    
     <section class="main_inf">
-            <div class="topic1">
+        <div class="topic1">
             <h3>Общие сведения</h3>
             <article class="text">
             <p><b>Комета</b> — небольшое небесное тело, обращающееся вокруг Солнца по 
@@ -45,9 +87,11 @@
                 к Солнцу <strong><em>комета</em></strong> образует кому и иногда хвост из газа и пыли. На середину 2018 года обнаружено 6339 комет, которые попадают во внутреннюю область 
                 Солнечной системы или область планет. 
                 Предположительно, долгопериодические кометы прилетают во внутреннюю Солнечную систему из облака Оорта, в котором находится огромное количество кометных ядер.</p>
-            </article>
-            
-            </div>
+                <br><br><br>
+            </article> 
+        </div>
+    </section>
+    </main>
     <script src="script/back.js"></script>
     <script src="script/comet.js"></script>
 </body>

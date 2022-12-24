@@ -73,6 +73,10 @@ section.gallery{
     flex: 25%;
     overflow: hidden;
     position: relative;
+    height: 300px;
+  }
+  .gallery-item img{
+    object-fit: cover;
   }
   .gallery-item-hover{
     position: absolute;
@@ -158,7 +162,6 @@ a p{
   position: relative;
   color: aliceblue;
   text-shadow: 0 1px 5px aliceblue;
-  
 }
 a:visited{text-decoration: none;}
 a{text-decoration:none ;}
