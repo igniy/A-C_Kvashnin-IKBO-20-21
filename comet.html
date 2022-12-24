@@ -16,6 +16,7 @@
     <script src="https://solarsystem.nasa.gov/assets/mbcms/vendor/jquery.fancybox-thumbs3-165b9822252e6816da53602b68cdd1a366475c528a9276488772c4849fed264f.js"></script>
     <script src="https://solarsystem.nasa.gov/assets/public_manifest-b07de43b6021ceb574b50cfb6e8339f8db605696538bf0eab33e30195c5514ed.js"></script>
     <script src="https://solarsystem.nasa.gov/assets/mb_manifest-3a8dffcce279709190a5d81d8d2844d0d0bcbfc3ac615c90e6ee633713048ebc.js"></script>
+    <!-- <link rel="stylesheet" href="style/header.css"> -->
 </head>
 <body>
     <div id="stars"></div>
@@ -40,15 +41,36 @@
                 <a href="index.html">
                     Кометы
                 </a>
+                
             </div>
-            <div class='middle_nav_toggler'>
+            <!-- <input type="checkbox" id="checkbox_toggle">
+                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger_mid_line"></span></label> -->
+            <!-- <div class='middle_nav_toggler'>
                 <div class='open_icon'>
                 Меню
                 </div>
                 <div class='close_icon'></div>
+            </div> -->
+            <ul class="nav_links">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger_mid_line"></span></label>
+                <div class="nav_menu">
+                    <li class="">
+                        <a href="comet.html">Общие сведения</a>
+                    </li>
+                        <li class="">
+                        <a href="comet2.html">Номенклатура</a>
+                        
+                        </li>
+                        <li class="">
+                        <a href="comet3.html">Строение</a>
+                        </li>
+                    
+                </div>
+            </ul>
             </div>
-            </div>
-            <ul class='middle_nav_items' style="font-family: 'Philosopher', sans-serif;">
+            
+            <ul class='middle_nav_items nav_links' style="font-family: 'Philosopher', sans-serif;">
             <li class='current'>
             <a href="comet.html">Общие сведения</a>
             <div class='tertiary_nav_arrow'></div>
@@ -63,7 +85,28 @@
             </li>
             </ul>
             </nav>
-            <nav class='tertiary_nav tertiary_nav_mobile'>
+            <!-- <nav>
+                <ul class="nav_links">
+                    <input type="checkbox" id="checkbox_toggle">
+                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger_mid_line"></span></label>
+                    <div class="nav_menu">
+                        <li class=''>
+                            <a href="comet.html">Общие сведения</a>
+                            
+                            </li>
+                            <li class=''>
+                            <a href="comet2.html">Номенклатура</a>
+                            
+                            </li>
+                            <li class=''>
+                            <a href="comet3.html">Строение</a>
+                            
+                            </li>
+                        
+                    </div>
+                </ul>
+            </nav> -->
+            <!-- <nav class='tertiary_nav tertiary_nav_mobile'>
             <select onchange='main.changePage(this.value);'>
             <option selected='selected' value='comet.html'>
             Общие сведения
@@ -75,7 +118,7 @@
             Строение
             </option>
             </select>
-            </nav>            
+            </nav>             -->
         </div>
     
     <section class="main_inf">
